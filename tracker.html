@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<head>
+    <!-- JS Script to jump() -->
+    <script type="text/javascript">
+        function gowhere(){
+            index = document.myform.togo.selectedIndex;         // 0, 1, 2, 3
+            url = document.myform.togo.options[index].value;    // URL string
+            location.href = url;
+        }
+    </script>
+
+    <!-- Styling for dropdown -->
+    <style>
+        /* Style The Dropdown Button */
+        .dropbtn {
+          background-color: #4CAF50;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+        }
+        
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        /* Links inside the dropdown */
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: #f1f1f1}
+        
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn {
+          background-color: #4CAF50;
+        }
+        </style>
+
+    <!-- CSS Lining -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1 >Air Quality Index </h1>
+        <p>Together, we can make a difference.</p>
+    </div>
+
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="tracker.html">State Polution Tracker</a>
+        <a href="awareness.html">Awareness</a>
+        <a href="#" class="right">Contact Us</a>
+    </div>
+
+    <div class="row">
+        <div class="main">
+            <h1>Tracker by States </h1>
+            <p>Air quality index (AQI) and PM2.5 air pollution in Malaysia</p>
+        
+            <div class="dropdown">
+                <form name="myform">
+                    <select class="dropbtn" name="togo" onchange="gowhere()">
+                        <option value="#">Select a state</option>                      <!-- index 0 -->
+                        <option value="#Melaka">Melaka</option>
+                        <option value="#JohorBahru">Johor Bahru</option>
+                        <option value="#Kedah">Kedah</option>
+                        <option value="#KualaLumpur">Kuala Lumpur</option>
+                        <option value="#Labuan">Labuan</option>
+                        <option value="#NegeriSembilan">Negeri Sembilan</option>
+                        <option value="#Kelantan">Kelantan</option>
+                        <option value="#Pahang">Pahang</option>
+                        <option value="#Penang">Penang</option>
+                        <option value="#Perak">Perak</option>
+                        <option value="#Putrajaya">Putrajaya</option>
+                        <option value="#Sabah">Sabah</option>
+                        <option value="#Sarawak">Sarawak</option>
+                        <option value="#Selangor">Selangor</option>
+                        <option value="#Terengganu">Terengganu</option>
+
+                    </select>
+                </form>
+            </div>
+
+        
+        
+            <div class="trackertable">
+                <table id="Melaka">
+                    <tr> 
+                        <th>
+                            Melaka
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div name="airvisual_widget" key="66716280ce7916adf20cf8b1"></div>
+                            <script type="text/javascript" src="https://widget.iqair.com/script/widget_v3.0.js"></script>
+                        </td>
+                    </tr>
+                </table>
+
+                <table id="JohorBahru">
+                    <tr> 
+                        <th>
+                            Johor Bahru (Larkin)
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div name="airvisual_widget" key="6671e7f286fa5e0ffb9831e5"></div>
+                            <script type="text/javascript" src="https://widget.iqair.com/script/widget_v3.0.js"></script>
+                        </td>
+                    </tr>
+                </table>
+
+                <table id="Kedah">
+                    <tr> 
+                        <th>
+                            Kedah (Alor Setar)
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div name="airvisual_widget" key="6671e8241187ac205de10e25"></div>
+                            <script type="text/javascript" src="https://widget.iqair.com/script/widget_v3.0.js"></script>
+                        </td>
+                    </tr>
+                </table>
+
+                <table id="KualaLumpur">
+                    <tr> 
+                        <th>
+                            Kuala Lumpur
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div name="airvisual_widget" key="6671e84b5cc0a86e727129a5"></div>
+                            <script type="text/javascript" src="https://widget.iqair.com/script/widget_v3.0.js"></script>
+                        </td>
+                    </tr>
+                </table>
+
+                <table id="Labuan">
+                    <tr> 
+                        <th>
+                            Labuan
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div name="airvisual_widget" key="6671e87a95d0a25e76812a61"></div>
+                            <script type="text/javascript" src="https://widget.iqair.com/script/widget_v3.0.js"></script>
+                        </td>
+                    </tr>
+                </table>
+
+                <table id="NegeriSembilan">
+                    <tr> 
+                        <th>
+                            Negeri Sembilan (Port Dickson)
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div name="airvisual_widget" key="6671e89986fa5e0ffb983c24"></div>
+                            <script type="text/javascript" src="https://widget.iqair.com/script/widget_v3.0.js"></script>
+                        </td>
+                    </tr>
+                </table>
+
+                <table id="Kelantan">
+                    <tr> 
+                        <th>
+                            Kelantan (Kota Bharu)
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div name="airvisual_widget" key="6671e8e786fa5e0ffb98407f"></div>
+                            <script type="text/javascript" src="https://widget.iqair.com/script/widget_v3.0.js"></script>
+                        </td>
+                    </tr>
+                </table>
+
+                <table id="Pahang">
+                    <tr> 
+                        <th>
+                            Pahang (Jerantut)
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div name="airvisual_widget" key="6671e92650c4871868b597b2"></div>
+                            <script type="text/javascript" src="https://widget.iqair.com/script/widget_v3.0.js"></script>
+                        </td>
+                    </tr>
+                </table>
+        
+                <table id="Penang">
+                    <tr> 
+                        <th>
+                            Penang (George Town)
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div name="airvisual_widget" key="6671e9471d205df84ed479ff"></div>
+                            <script type="text/javascript" src="https://widget.iqair.com/script/widget_v3.0.js"></script>
+                        </td>
+                    </tr>
+                </table>
+
+                <table id="Perak">
+                    <tr> 
+                        <th>
+                            Perak (Ipoh)
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div name="airvisual_widget" key="6671e97a23e15a8688fe59b8"></div>
+                            <script type="text/javascript" src="https://widget.iqair.com/script/widget_v3.0.js"></script>
+                        </td>
+                    </tr>
+                </table>
+
+                <table id="Putrajaya">
+                    <tr> 
+                        <th>
+                            Putrajaya
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div name="airvisual_widget" key="6671e9b65cc0a86e72713df1"></div>
+                            <script type="text/javascript" src="https://widget.iqair.com/script/widget_v3.0.js"></script>
+                        </td>
+                    </tr>
+                </table>
+
+                <table id="Sabah">
+                    <tr> 
+                        <th>
+                            Sabah (Sandakan)
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div name="airvisual_widget" key="6671ea04da7d326ba18c1af0"></div>
+                            <script type="text/javascript" src="https://widget.iqair.com/script/widget_v3.0.js"></script>
+                        </td>
+                    </tr>
+                </table>
+
+                <table id="Sarawak">
+                    <tr> 
+                        <th>
+                            Sarawak (Kuching)
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div name="airvisual_widget" key="6671ea29b08f23f041572e30"></div>
+                            <script type="text/javascript" src="https://widget.iqair.com/script/widget_v3.0.js"></script>
+                        </td>
+                    </tr>
+                </table>
+
+                <table id="Selangor">
+                    <tr> 
+                        <th>
+                            Selangor (Klang)
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div name="airvisual_widget" key="6671ea6895d0a25e76814570"></div>
+                            <script type="text/javascript" src="https://widget.iqair.com/script/widget_v3.0.js"></script>
+                        </td>
+                    </tr>
+                </table>
+                
+                <table id="Terengganu">
+                    <tr> 
+                        <th>
+                            Terengganu (Kuala Terengganu)
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div name="airvisual_widget" key="6671ea8f66a24c37e4613134"></div>
+                            <script type="text/javascript" src="https://widget.iqair.com/script/widget_v3.0.js"></script>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="footer2">
+                <h2>LET'S SAVE THE EARTH!</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
